@@ -10,25 +10,33 @@
 
 
 <body>
-    <header>
+    <header class="logo-alura">
        <img src="./assets/a.png" alt="Logo Alura"> 
     </header>
 
-    <main>
-        <textarea name="texto-entrada" id="texto-entrada" cols="150" rows="30">Digite seu texto</textarea>
-        <section>
-            <img src="./assets/drawing.png" alt="Personagem com pula na mao">
-            <h1>
-                Nenhuma mensagem encontrada
-            </h1>
-            <p>
-                Digite um texto que voce deseja criptografar ou descriptografar.
-            </p>
+    <main class="area-interacao">
+        <section class="area__interacao__texto-input">
+            <textarea class="input-texto" placeholder="Digite seu texto" name="texto-entrada" id="texto-entrada" style="resize: none;background-color: rgba(0, 0, 0, 0); border-color: rgba(0, 0, 0, 0)" cols="30" rows="19"></textarea>
+            <section class="mensagem-aviso">
+                <img class="mensagem-aviso__exclamacao" src="./assets/exclamation-circle-fill.png" alt="Sinal de exclamacao">
+                <p class="mensagem-aviso__texto">Apenas letras minusculas e sem acento.</p>
+            </section>
+                <div class="interacao-botoes">
+                    <button class="interacao-botoes__encript" onclick="codificarTexto()" id="codificar">Criptografar</button>
+                    <button class="interacao-botoes__decript" onclick="decodificarTexto()" id="decodificar">Descriptografar</button>
+                </div>
         </section>
-        <div>
-            <button onclick="codificarTexto()" id="codificar">Criptografar</button>
-            <button onclick="decodificarTexto()" id="decodificar">Descriptografar</button>
+
+        <div class="area__interacao__texto-output">
+            <img class="area__interacao__texto-output__imagem" src="./assets/drawing.png" alt="Personagem com lupa na mao">
+            <section class="area__interacao__texto-output__mensagem">
+                <h1 class="area__interacao__texto-output__mensagem__titulo">Nenhuma mensagem encontrada</h1>
+                <p class="area__interacao__texto-output__mensagem__paragrafo">Digite um texto que voce deseja criptografar ou descriptografar.</p>
+            </section>
         </div>
+        <!-- <footer class="rodape">
+            <p>Desenvolvido por Walison Cardoso<p>
+        </footer> -->
     </main>
 </body>
 </html>
