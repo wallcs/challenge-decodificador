@@ -1,5 +1,5 @@
 
-function codificarTexto() {
+function codificarTexto() { // Funcao codificar - Analisa letra por letra e troca as vogais pelo codigo correspondente
     let plainText = document.getElementById('texto-entrada').value;
     let plainTextArray = Array.from(plainText);
     let plainTextFinal = '';
@@ -22,7 +22,7 @@ function codificarTexto() {
     console.log(plainTextFinal)
 }
 
-function decodificarTexto() {
+function decodificarTexto() { // Funcao decodificar - Usa o metodo replace() para trocar a parte codificada do texto para a vogal correspondente
     let cipherText = document.getElementById('texto-entrada').value;
     let cipherTextFinal = '';
    
