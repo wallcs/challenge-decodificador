@@ -10,38 +10,40 @@
 
 
 <body>
-    <header class="logo-alura">
-       <img src="./assets/a.png" alt="Logo Alura"> 
-    </header>
-
-    <main class="area-interacao">
-        <div class="area__interacao__texto-input">
-<!-- Área onde o texto será inserido -->
-            <textarea class="textarea" placeholder="Digite seu texto" name="texto-entrada" id="texto-entrada" style="resize: none;background-color: rgba(0, 0, 0, 0); border-color: rgba(0, 0, 0, 0)" cols="30" rows="19"></textarea>
-            <div class="mensagem-aviso">
-                <img class="mensagem-aviso__exclamacao" src="./assets/exclamation-circle-fill.png" alt="Sinal de exclamacao">
-                <p class="mensagem-aviso__texto">Apenas letras minúsculas e sem acento.</p>
-            </div>
+    <div class="teste">
+        <header class="logo-alura">
+        <img src="./assets/a.png" alt="Logo Alura"> 
+        </header>
+        <main class="area-interacao">
+            <div class="area__interacao__texto-input">
+                <!-- Área onde o texto será inserido -->
+                <textarea class="textarea" placeholder="Digite seu texto" name="texto-entrada" id="texto-entrada" style="resize: none;background-color: rgba(0, 0, 0, 0); border-color: rgba(0, 0, 0, 0)" cols="30" rows="19"></textarea>
+                <div class="mensagem-aviso">
+                    <img class="mensagem-aviso__exclamacao" src="./assets/exclamation-circle-fill.png" alt="Sinal de exclamacao">
+                    <p class="mensagem-aviso__texto">Apenas letras minúsculas e sem acento.</p>
+                </div>
                 <div class="interacao-botoes">
-<!-- Botões CRIPTOGRAFAR/DESCRIPTOGRAFAR -->
-                    <button onclick="codificarTexto()" id="codificar" class="interacao-botoes__encript">Criptografar</button>
-                    <button onclick="decodificarTexto()" id="decodificar" class="interacao-botoes__decript">Descriptografar</button>
-                </div>
-        </div>
-<!-- Área para mostrar o texto criptorafado/descriptografado -->
-        <div class="area__interacao__texto-output">
-            <div class="style_display">
-                <img class="area__interacao__texto-output__imagem" src="./assets/drawing.png" alt="Personagem com lupa na mao">
-                <div class="area__interacao__texto-output__mensagem">
-                    <h1 class="area__interacao__texto-output__mensagem__titulo">Nenhuma mensagem encontrada</h1>
-                    <p class="area__interacao__texto-output__mensagem__paragrafo">Digite um texto que você deseja criptografar ou descriptografar.  </p>
+                        <!-- Botões CRIPTOGRAFAR/DESCRIPTOGRAFAR -->
+                        <button onclick="codificarTexto()" id="codificar" class="interacao-botoes__encript">Criptografar</button>
+                        <button onclick="decodificarTexto()" id="decodificar" class="interacao-botoes__decript">Descriptografar</button>
                 </div>
             </div>
-        </div>
-<!-- Rodapé com o nome -->
+            <div class="area__interacao__texto-output">
+                <!-- Área para mostrar o texto criptorafado/descriptografado -->
+                <div class="style_display">
+                    <img class="area__interacao__texto-output__imagem" src="./assets/drawing.png" alt="Personagem com lupa na mao">
+                    <div class="area__interacao__texto-output__mensagem">
+                        <h1 class="area__interacao__texto-output__mensagem__titulo">Nenhuma mensagem encontrada</h1>
+                        <p class="area__interacao__texto-output__mensagem__paragrafo">Digite um texto que você deseja criptografar ou descriptografar.  </p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
         <footer class="rodape">
+            <!-- Rodapé com o nome -->
             <p>Desenvolvido por Walison Cardoso<p>
-        </footer>
+        </footer> 
     </main>
 
     <script src="script.js" defer></script>
