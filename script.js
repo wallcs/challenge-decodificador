@@ -4,7 +4,7 @@ function codificarTexto() {
     let plainTextArray = Array.from(plainText);
     let plainTextFinal = '';
 
-    for (let i = 0; i < plainTextArray.length; i++) {
+        for (let i = 0; i < plainTextArray.length; i++) {
         if (plainTextArray[i] == 'a') {
             plainTextFinal = plainTextFinal.concat('ai');
             } else if (plainTextArray[i] == 'e') {
@@ -24,11 +24,9 @@ function codificarTexto() {
 
 function decodificarTexto() {
     let cipherText = document.getElementById('texto-entrada').value;
-    let cipherTextArray = Array.from(cipherText)
     let cipherTextFinal = '';
    
-    for (let j = 0; j < cipherTextArray.length; j++) {
-        console.log(j)
-    }
-    console.log(plainTextFinal)
+    cipherTextFinal = cipherText.replace(/ai/ig, 'a').replace(/enter/ig, 'e').replace(/imes/ig, 'i').replace(/ober/ig, 'o').replace(/ufat/ig, 'u');
+    
+    console.log(cipherTextFinal)
 }
