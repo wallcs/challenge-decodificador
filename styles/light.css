@@ -114,10 +114,11 @@
     gap: 24px;
 }
 
+
 .area__interacao__texto-output {
     border-radius: 32px;
-    margin: 40px 40px 40px 0 ;
-    height: 945px;
+    margin: 40px 40px 0 0 ;
+    height: 915px;
     width: 400px;
     background-color: #ffffff;
     display: flex;
@@ -184,4 +185,59 @@
 .interacao-botoes__decript:hover {
     border: 3px solid #17abf0;
 }
+
+@media screen and (max-width: 1600px) {
+    
+    .area__interacao__texto-output {
+        height: 730px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .area__interacao__texto-output {
+        width: 90vw;
+        height: 30vh;
+        margin: 0 40px 0 40px ;
+    }
+
+    .teste {
+        
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .area__interacao__texto-input {
+        margin: 0 40px 0 40px;
+    }
+
+    .textarea {
+        height: 45vh;
+    }
+
+    .logo-alura {
+        height: 50.58px;
+        width: 31.09px;
+    }
+
+    .area__interacao__texto-output__imagem {
+        display: none;
+    }
+
+
+    .area-interacao{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .interacao-botoes__encript {
+        width: 332px;
+    }
+
+    .interacao-botoes__decript {
+        width: 332px;
+    }
+   
+}
+
 
