@@ -2,7 +2,7 @@ function hideElement() {
     document.getElementById("imagem").style.display = "none";
     document.getElementById("titulo").style.display = "none";
     document.getElementById("paragrafo").style.display = "none";
-  }
+}
 
 
 function codificarTexto() { // Funcao codificar - Analisa letra por letra e troca as vogais pelo codigo correspondente
@@ -10,21 +10,22 @@ function codificarTexto() { // Funcao codificar - Analisa letra por letra e troc
     let plainTextArray = Array.from(plainText);
     let plainTextFinal = '';
 
-        for (let i = 0; i < plainTextArray.length; i++) {
-        if (plainTextArray[i] == 'a') {
-            plainTextFinal = plainTextFinal.concat('ai');
-            } else if (plainTextArray[i] == 'e') {
-            plainTextFinal = plainTextFinal.concat('enter');
-            } else if (plainTextArray[i] == 'i') {
-                plainTextFinal = plainTextFinal.concat('imes');
-            } else if (plainTextArray[i] == 'o') {
-                plainTextFinal = plainTextFinal.concat('ober');
-            } else if (plainTextArray[i] == 'u') {
-                plainTextFinal = plainTextFinal.concat('ufat');
-            } else {
-                plainTextFinal = plainTextFinal.concat(plainTextArray[i]);
-            }     
+    for (let i = 0; i < plainTextArray.length; i++) {
+    if (plainTextArray[i] == 'a') {
+        plainTextFinal = plainTextFinal.concat('ai');
+        } else if (plainTextArray[i] == 'e') {
+        plainTextFinal = plainTextFinal.concat('enter');
+        } else if (plainTextArray[i] == 'i') {
+            plainTextFinal = plainTextFinal.concat('imes');
+        } else if (plainTextArray[i] == 'o') {
+            plainTextFinal = plainTextFinal.concat('ober');
+        } else if (plainTextArray[i] == 'u') {
+            plainTextFinal = plainTextFinal.concat('ufat');
+        } else {
+            plainTextFinal = plainTextFinal.concat(plainTextArray[i]);
+        }           
     }
+    hideElement();  
     console.log(plainTextFinal)
 }
 
@@ -34,6 +35,6 @@ function decodificarTexto() { // Funcao decodificar - Usa o metodo replace() par
    
     cipherTextFinal = cipherText.replace(/ai/ig, 'a').replace(/enter/ig, 'e').replace(/imes/ig, 'i').replace(/ober/ig, 'o').replace(/ufat/ig, 'u');
     
-   
+    hideElement();   
     console.log(cipherTextFinal)
 }
