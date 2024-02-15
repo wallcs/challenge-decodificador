@@ -29,8 +29,8 @@
 .area-interacao {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     gap: 5%;
+    width: 100vw;
 
 }
 
@@ -188,12 +188,10 @@
     border: 2px solid #17abf0;
 }
 
-        /* ------------------------------- MUDANCA DE RESOLUCAO DE TELA ------------------------------- */
+/* -------------------------------------------------------- 950px --------------------------------------------------------------- */
 
 @media screen and (max-width: 950px) {
-
-
-        
+          
     .area__interacao__texto-output__imagem { 
         display: none;
     }
@@ -204,6 +202,7 @@
         flex-direction: column;
         justify-content: flex-start;
         height: 100vh;
+        
     }
 
     .corpo {
@@ -221,12 +220,12 @@
     
         
     .interacao-botoes {
-        width: 90vw;
+        width: 100%;
     }
     .area__interacao__texto-output {
         width: 90vw;
         height: 20vh;
-        margin:  64px 40px 40px ;
+        margin:  10px 40px 40px ;
     }
 
     .area__interacao__texto-input {
@@ -239,11 +238,14 @@
     }            
 }
 
+/* -------------------------------------------------------- 425px --------------------------------------------------------------- */
+
 @media screen and (max-width: 425px) {
 
     
     .interacao-botoes {
         flex-direction: column;
+        width: 100%;
     }
     
     .textarea {
@@ -251,13 +253,39 @@
     }
     
     .logo-alura {
-        margin: 40px 0 73.42px 40px;
+        margin: 30px 0 73.42px 16px;
     }
 
     .area__interacao__texto-output {
-        margin: 30px 40px 40px;
-
+        margin: 20px 16px 16px 16px;
+        width: 91.5vw;
     }
+    
+    .area__interacao__texto-input {
+        margin: 0 16px 0 16px;
+    }
+
+
+    .interacao-botoes__decript {
+        width: 100%;
+    }
+
+    .interacao-botoes__encript {
+        width: 100%;
+    }
+     
+    .textarea {
+        width: 100%;
+    }
+
+    .area__interacao__texto-output__mensagem__paragrafo {
+        font-size: 0.8rem;
+    }
+
+    .area__interacao__texto-output__mensagem__titulo {
+        font-size: 1rem;
+    }
+    
 }
 
 
