@@ -24,15 +24,15 @@
             </div>
             <div class="interacao-botoes">
                 <!-- Botões CRIPTOGRAFAR/DESCRIPTOGRAFAR -->
-                <button onclick="codificarTexto()" id="codificar" class="interacao-botoes__encript">Criptografar</button>
+                <button onclick="hideElement()" id="codificar" class="interacao-botoes__encript">Criptografar</button>
                 <button onclick="decodificarTexto()" id="decodificar" class="interacao-botoes__decript">Descriptografar</button>
             </div>
         </div>
         <div class="area__interacao__texto-output">
             <!-- Área para mostrar o texto criptorafado/descriptografado -->
-            <img class="area__interacao__texto-output__imagem" src="./assets/drawing.png" alt="Personagem com lupa na mao">             
-            <h1 class="area__interacao__texto-output__mensagem__titulo">Nenhuma mensagem encontrada</h1>
-            <p class="area__interacao__texto-output__mensagem__paragrafo">Digite um texto que você deseja criptografar ou descriptografar.  </p>                
+            <img class="area__interacao__texto-output__imagem" id="imgame" src="./assets/drawing.png" alt="Personagem com lupa na mao">             
+            <h1 class="area__interacao__texto-output__mensagem__titulo" id="titulo" >Nenhuma mensagem encontrada</h1>
+            <p class="area__interacao__texto-output__mensagem__paragrafo" id="paragrafo" >Digite um texto que você deseja criptografar ou descriptografar.  </p>                
        </div>
     </main>
     <footer class="rodape">

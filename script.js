@@ -1,3 +1,9 @@
+function hideElement() {
+    document.getElementById("imagem").style.display = "none";
+    document.getElementById("titulo").style.display = "none";
+    document.getElementById("paragrafo").style.display = "none";
+  }
+
 
 function codificarTexto() { // Funcao codificar - Analisa letra por letra e troca as vogais pelo codigo correspondente
     let plainText = document.getElementById('texto-entrada').value;
@@ -28,5 +34,6 @@ function decodificarTexto() { // Funcao decodificar - Usa o metodo replace() par
    
     cipherTextFinal = cipherText.replace(/ai/ig, 'a').replace(/enter/ig, 'e').replace(/imes/ig, 'i').replace(/ober/ig, 'o').replace(/ufat/ig, 'u');
     
+   
     console.log(cipherTextFinal)
 }
