@@ -1,9 +1,13 @@
 function hideElement() {
+    document.getElementById("textoResultado").removeAttribute("hidden");
     document.getElementById("imagem").style.display = "none";
     document.getElementById("titulo").style.display = "none";
     document.getElementById("paragrafo").style.display = "none";
 }
 
+function exibeMensagem(mensagem) { 
+        document.getElementById("textoResultado").innerHTML = mensagem;
+}
 
 function codificarTexto() { // Funcao codificar - Analisa letra por letra e troca as vogais pelo codigo correspondente
     let plainText = document.getElementById('texto-entrada').value;
@@ -25,8 +29,8 @@ function codificarTexto() { // Funcao codificar - Analisa letra por letra e troc
             plainTextFinal = plainTextFinal.concat(plainTextArray[i]);
         }           
     }
-    hideElement();  
-    console.log(plainTextFinal)
+    hideElement();
+    exibeMensagem(plainTextFinal);
 }
 
 function decodificarTexto() { // Funcao decodificar - Usa o metodo replace() para trocar a parte codificada do texto para a vogal correspondente
@@ -36,5 +40,5 @@ function decodificarTexto() { // Funcao decodificar - Usa o metodo replace() par
     cipherTextFinal = cipherText.replace(/ai/ig, 'a').replace(/enter/ig, 'e').replace(/imes/ig, 'i').replace(/ober/ig, 'o').replace(/ufat/ig, 'u');
     
     hideElement();   
-    console.log(cipherTextFinal)
+    exibeMensagem(cipherTextFinal);
 }
