@@ -42,7 +42,8 @@
 }
 
 
-.textarea {
+.area-texto
+ {
     resize: none;
     font-family: 'Inter', sans-serif;
     font-size: 2rem;
@@ -81,7 +82,7 @@
     height: 16px;
 }
 
-.interacao-botoes {
+.area__interacao__texto-input__botoes {
     display: flex;
     gap: 24px;
     width: 50vw;
@@ -174,11 +175,34 @@
     height: 100%;
     word-wrap: break-word;
     text-overflow: ellipsis;
-    overflow: hidden;
+      
 }
 
 ::-webkit-scrollbar { 
     display: none; 
+}
+
+
+.area__interacao__texto-output__botoes {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin: 24px;
+}
+
+.area__interacao__texto-output__botoes__limpar-colar {
+    display: flex;
+    justify-content: center;
+    border: 0;
+    background: #0A3871;
+    color: #ffffff;
+    width: 38%;
+    height: 100%;
+    text-align: center;
+    border-radius: 18px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 15px 0;
 }
 
 .rodape{
@@ -206,6 +230,13 @@
 .interacao-botoes__decript:hover {
     border: 2px solid #17abf0;
 }
+
+.area__interacao__texto-output__botoes__limpar-colar:hover {
+    opacity: 0.8;
+    
+}
+
+
 
 
 /* -----------------------------------/ RESPONSIVIDADE / RESOLUCAO DE TELA /---------------------------------------------  */
@@ -250,14 +281,15 @@
                    
     }
         
-    .textarea {
+    .area-texto
+     {
         width: 90vw;
         height: 40vh;
         font-size: 1.5rem;
     }
     
         
-    .interacao-botoes {
+    .area__interacao__texto-input__botoes {
         width: 100%;
     }
     .area__interacao__texto-output {
@@ -285,12 +317,13 @@
 @media screen and (max-width: 425px) {
 
     
-    .interacao-botoes {
+    .area__interacao__texto-input__botoes {
         flex-direction: column;
         width: 100%;
     }
     
-    .textarea {
+    .area-texto
+     {
         height: 35vh;
     }
     
@@ -320,7 +353,8 @@
         width: 100%;
     }
      
-    .textarea {
+    .area-texto
+     {
         width: 100%;
     }
 

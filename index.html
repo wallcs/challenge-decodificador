@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge Alura</title>
+    <link rel="icon" href="./assets/alura-favcon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/light.css">
 </head>
 
@@ -17,12 +18,12 @@
     <main class="area-interacao">
         <div class="area__interacao__texto-input">
             <!-- Área onde o texto será inserido -->
-            <textarea class="textarea" placeholder="Digite seu texto" name="texto-entrada" id="texto-entrada"></textarea>
+            <textarea class="area-texto" placeholder="Digite seu texto" name="texto-entrada" id="texto-entrada"></textarea>
             <div class="mensagem-aviso">
                 <img class="mensagem-aviso__exclamacao" src="./assets/exclamation-circle-fill.png" alt="Sinal de exclamacao">
                 <p class="mensagem-aviso__texto">Apenas letras minúsculas e sem acento.</p>
             </div>
-            <div class="interacao-botoes">
+            <div class="area__interacao__texto-input__botoes">
                 <!-- Botões CRIPTOGRAFAR/DESCRIPTOGRAFAR -->
                 <button onclick="codificarTexto()" id="codificar" class="interacao-botoes__encript">Criptografar</button>
                 <button onclick="decodificarTexto()" id="decodificar" class="interacao-botoes__decript">Descriptografar</button>
@@ -33,7 +34,11 @@
             <img class="area__interacao__texto-output__imagem" id="imagem" src="./assets/drawing.png" alt="Personagem com lupa na mao">             
             <h1 class="area__interacao__texto-output__mensagem__titulo" id="titulo" >Nenhuma mensagem encontrada</h1>
             <p class="area__interacao__texto-output__mensagem__paragrafo" id="paragrafo" >Digite um texto que você deseja criptografar ou descriptografar.  </p>
-            <p class="texto__resultado" id="textoResultado" hidden></p>       
+            <p class="texto__resultado" id="textoResultado" hidden></p> 
+            <div class="area__interacao__texto-output__botoes" id="botao-output" style="display: none;">
+                <button onclick="botaoCopiarTexto()" id="copiar" class="area__interacao__texto-output__botoes__limpar-colar">Copiar</button>
+                <button onclick="botaoLimparTexto()" id="limpar" class="area__interacao__texto-output__botoes__limpar-colar">Limpar</button>
+            </div>      
        </div>
     </main>
     <footer class="rodape">
